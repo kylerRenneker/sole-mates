@@ -4,7 +4,7 @@ import shoe1 from '../../assets/shoeImage1.jpg'
 import shoe2 from '../../assets/shoeImage2.jpg'
 import shoe3 from '../../assets/shoeImage3.jpg'
 
-export default () => {
+export default function ImageCarousel() {
     return (
         <Carousel autoPlay showArrows={false} showThumbs={false}>
             <img src={shoe1} alt></img>

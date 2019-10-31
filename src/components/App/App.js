@@ -1,11 +1,20 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
+import styled from 'styled-components'
 import Header from '../Header/Header'
 import Home from '../../routes/Home/Home'
+import Footer from '../Footer/Footer'
+
+const SiteContainer = styled.div`
+  max-width: 80%;
+  padding: 20px;
+  margin: auto;
+`
+
 
 function App() {
   return (
-    <div>
+    <SiteContainer>
       <Header />
       <Switch>
         <Route exact path='/'>
@@ -18,7 +27,8 @@ function App() {
 
         </Route>
       </Switch>
-    </div>
+      <Footer />
+    </SiteContainer>
   );
 }
 
