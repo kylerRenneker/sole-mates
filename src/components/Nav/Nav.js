@@ -11,7 +11,7 @@ export default function Nav() {
 
     const Navigation = styled.nav`
         position: absolute;
-        top: 25px;
+        top: 20px;
         right: 50px;
     `
 

@@ -6,29 +6,29 @@ import Home from '../../routes/Home/Home'
 import Footer from '../Footer/Footer'
 
 const SiteContainer = styled.div`
-  max-width: 80%;
-  padding: 20px;
   margin: auto;
 `
 
 
 function App() {
   return (
-    <SiteContainer>
+    <>
       <Header />
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/about'>
+      <SiteContainer>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/about'>
 
-        </Route>
-        <Route path='/shop'>
+          </Route>
+          <Route path='/shop'>
 
-        </Route>
-      </Switch>
-      <Footer />
-    </SiteContainer>
+          </Route>
+        </Switch>
+        <Footer />
+      </SiteContainer>
+    </>
   );
 }
 

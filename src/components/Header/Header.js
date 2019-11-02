@@ -5,19 +5,18 @@ import styled from 'styled-components'
 
 export default function Header() {
 
-    const Img = styled.img`
-        width: 100px;
-        display: flex;
-        margin: 20px auto;
+    const Header = styled.header`
+            
     `
 
-    const Header = styled.header`
-        height: 100px;    
+    const Logo = styled.h1`
+        font-family: 'Amatic SC', cursive;
+        text-align: center;   
     `
 
     return (
         <Header>
-            <Img src={Logo} alt='logo'></Img>
+            <Logo>Sole Mates</Logo>
             <Nav></Nav>
         </Header>
     )
