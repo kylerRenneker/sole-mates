@@ -7,26 +7,37 @@ export default function Nav() {
     const List = styled.ul`
         display: flex;
         list-style: none;
+        font-size: 1.4rem;
+        margin-right: 30px;
     `
 
     const Navigation = styled.nav`
         position: absolute;
-        top: 20px;
-        right: 50px;
+        top: 50px;
+        right: 0;
+    `
+
+    const LinkItem = styled.li`
+        margin-right: 26px;
+    
+    `
+
+    const StyledLink = styled(Link)`
+        text-decoration: none;
     `
 
     return (
         <Navigation>
             <List>
-                <li>
-                    <Link to='/'>HOME</Link>
-                </li>
-                <li>
-                    <Link to='/about'>ABOUT</Link>
-                </li>
-                <li>
-                    <Link to='/shop'>SHOP</Link>
-                </li>
+                <LinkItem>
+                    <StyledLink to='/'>HOME</StyledLink>
+                </LinkItem>
+                <LinkItem>
+                    <StyledLink to='/about'>ABOUT</StyledLink>
+                </LinkItem>
+                <LinkItem>
+                    <StyledLink to='/shop'>SHOP</StyledLink>
+                </LinkItem>
             </List>
         </Navigation>
     )

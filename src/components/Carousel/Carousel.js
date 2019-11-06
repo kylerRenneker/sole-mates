@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import shoe1 from '../../assets/shoeImage1.jpg'
-import shoe2 from '../../assets/shoeImage2.jpg'
-import shoe3 from '../../assets/shoeImage3.jpg'
+import styled from 'styled-components'
 
-export default function ImageCarousel() {
+const Img = styled.img`
+    hieght: 740px;
+`
+
+
+export default function ImageCarousel(props) {
+    const { images } = props;
+
     return (
         <Carousel autoPlay showArrows={false} showThumbs={false}>
-            <img src={shoe1} alt></img>
-            <img src={shoe2}></img>
-            <img src={shoe3}></img>
+            {images.map((image, i) => <Img src={image} key={i}></Img>)}
         </Carousel>
     )
 }
