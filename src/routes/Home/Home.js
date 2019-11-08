@@ -6,9 +6,9 @@ import LandMessage from '../../components/LandMessage/LandMessage'
 import LandProducts from '../../components/LandProducts/LandProducts'
 import LandProductStory from '../../components/LandProductStory/LandProductStory'
 import SocialFooter from '../../components/SocialFooter/SocialFooter'
-import shoe1 from '../../assets/shoeImage1.jpg'
-import shoe2 from '../../assets/shoeImage2.jpg'
-import shoe3 from '../../assets/shoeImage3.jpg'
+import shoe1 from '../../assets/images/shoeImage1.jpg'
+import shoe2 from '../../assets/images/shoeImage2.jpg'
+import shoe3 from '../../assets/images/shoeImage3.jpg'
 
 const Main = styled.main`
     max-width: 1440px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Nav/Nav'
-import Logo from '../../assets/LogoMakr_0Me2oo.png'
+import Logo from '../../assets/images/LogoMakr_0Me2oo.png'
 import styled from 'styled-components'
 
 export default function Header() {
