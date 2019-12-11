@@ -10,7 +10,7 @@ export default function Header() {
         margin: auto;
         position: relative;
         padding-top: 30px; 
-        padding-bottom: 30px;         
+        padding-bottom: 50px;         
     `
 
     const Logo = styled.h1`

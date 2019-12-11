@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 export default function Nav() {
+    let history = useHistory()
 
     const List = styled.ul`
         display: flex;
@@ -23,7 +24,19 @@ export default function Nav() {
     `
 
     const StyledLink = styled(Link)`
+        font-family: 'YanoneKaffeesatz';
+        font-size: 2.4rem;
         text-decoration: none;
+        color: ${p => history.location.pathname === p.to ? '#176ca9' : '#444444'};
+        &:hover {
+            color: #176ca9;
+        }
+        
+    `
+
+    const ShopLink = styled(StyledLink)`
+        border: 1px solid #444444;
+        padding: 10px 20px;
     `
 
     return (
@@ -36,7 +49,7 @@ export default function Nav() {
                     <StyledLink to='/about'>ABOUT</StyledLink>
                 </LinkItem>
                 <LinkItem>
-                    <StyledLink to='/shop'>SHOP</StyledLink>
+                    <ShopLink to='/shop'>SHOP</ShopLink>
                 </LinkItem>
             </List>
         </Navigation>

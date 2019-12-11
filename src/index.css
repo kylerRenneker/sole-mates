@@ -3,6 +3,24 @@
   src: url('./assets/fonts/Amatic_SC/AmaticSC-Bold.ttf')
 }
 
+@font-face{
+  font-family: 'YanoneKaffeesatz';
+  font-weight: normal;
+  src: url('./assets/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf')
+}
+
+@font-face{
+  font-family: 'YanoneKaffeesatz';
+  font-weight: 500;
+  src: url('./assets/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Medium.ttf')
+}
+
+@font-face{
+  font-family: 'YanoneKaffeesat';
+  font-weight: 600;
+  src: url('./assets/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-SemiBold.ttf')
+}
+
 html {
   font-size: 10px;
   box-sizing: border-box;

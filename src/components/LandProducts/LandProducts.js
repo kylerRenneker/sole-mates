@@ -6,6 +6,15 @@ import styled from 'styled-components'
 
 const FeatureList = styled.ul`
     display: flex;
+    padding: 0;
+    position: relative;
+    justify-content: space-between;
+`
+
+const FeaturedItem = styled.img`
+    width: 450px;
+    height: 540px;
+    padding: 10px;
 `
 
 export default function LandProducts() {
@@ -15,7 +24,7 @@ export default function LandProducts() {
 
         images.map((image, i) => {
             content.push(
-                <img src={image} />
+                <FeaturedItem src={image} />
             )
         })
 
